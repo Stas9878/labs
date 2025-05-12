@@ -98,7 +98,8 @@ for name, rel in relations.items():
 # Вывод матриц
 def print_matrix(name, matrix):
     print(f'\nМатрица {name}:')
-    print(matrix)
+    for row in matrix:
+        print(f'  {row}')
 
 
 print_matrix('R', matrix_R)
